@@ -1,6 +1,6 @@
-package Logic;
+package logic;
 
-import creationalPatterns.FactoryDemo.FactoryPatternDemo;
+import creationalPatterns.factoryDemo.FactoryPatternDemo;
 
 public class DemoFactory {
 

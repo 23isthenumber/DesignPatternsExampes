@@ -1,4 +1,4 @@
-package Logic;
+package logic;
 
 import creationalPatterns.AbstractFactory;
 import creationalPatterns.Factory;
@@ -6,7 +6,7 @@ import creationalPatterns.Factory;
 import java.util.Scanner;
 
 
-public class Creational implements Pattern {
+public class Creational implements PatternType {
 
     public Creational (){
         int CPChoice;

@@ -1,6 +1,6 @@
-package Logic;
+package logic;
 
-public class Behavioral implements Pattern{
+public class Behavioral implements PatternType {
 
     @Override
     public void useageMessage() {

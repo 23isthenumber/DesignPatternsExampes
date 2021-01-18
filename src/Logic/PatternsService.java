@@ -1,4 +1,4 @@
-package Logic;
+package logic;
 
 import java.awt.*;
 import java.io.IOException;
@@ -8,13 +8,12 @@ import java.util.Scanner;
 
 public class PatternsService {
 
-    public void patternLogic (String usageMessage, String githubCodeURI, String diagramURI,
+    public void patternLogic (String githubCodeURI, String diagramURI,
                               String whichDemo){
         Scanner inputScanner = new Scanner(System.in);
         int input;
-        DemoFactory demoFactory;
 
-        System.out.println(usageMessage); // TO DO style formating
+
 
         do {
             System.out.println("Would you rather see an:");

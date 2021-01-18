@@ -1,5 +1,5 @@
-package creationalPatterns.FactoryDemo;
-
+package creationalPatterns.factoryDemo;
+//example from tutorialspoint.com
 public class Circle implements Shape {
 
     @Override

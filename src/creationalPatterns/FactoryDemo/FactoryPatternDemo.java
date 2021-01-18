@@ -1,4 +1,4 @@
-package creationalPatterns.FactoryDemo;
+package creationalPatterns.factoryDemo;
 
 import java.io.IOException;
 
