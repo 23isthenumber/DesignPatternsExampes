@@ -1,7 +1,6 @@
 package logic;
 
 import creationalPatterns.AbstractFactory;
-import creationalPatterns.Factory;
 
 import java.util.Scanner;
 
@@ -11,6 +10,7 @@ public class Creational implements PatternType {
     public Creational (){
         int CPChoice;
         Scanner CPInput= new Scanner(System.in);
+        CreationalFactory creationalFactory = new CreationalFactory();
 
         do {
             useageMessage();
@@ -18,7 +18,7 @@ public class Creational implements PatternType {
             CPChoice = CPInput.nextInt();
 
             if (CPChoice == 1) {
-                new Factory();
+                Pattern factory = creationalFactory.getPattern("Factory");
             }
             else if (CPChoice==2) {
                 new AbstractFactory(); //TO DO
@@ -28,6 +28,7 @@ public class Creational implements PatternType {
             }
         }while (CPChoice!=20);
     }
+
 
 
 
