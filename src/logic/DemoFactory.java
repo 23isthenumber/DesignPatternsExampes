@@ -4,9 +4,10 @@ import creationalPatterns.factoryDemo.FactoryPatternDemo;
 
 public class DemoFactory {
 
-    public DemoFactory (String whichDemo){
+    public PatternDemo getPatternDemo (String whichDemo){
         if (whichDemo=="Factory"){
-            new FactoryPatternDemo();
+            return new FactoryPatternDemo();
         }
+        return null;
     }
 }

@@ -12,7 +12,7 @@ public class PatternsService {
                               String whichDemo){
         Scanner inputScanner = new Scanner(System.in);
         int input;
-
+        DemoFactory demoFactory = new DemoFactory();
 
 
         do {
@@ -42,7 +42,7 @@ public class PatternsService {
                     e.printStackTrace();
                 }
             } else if (input == 3) {
-                new DemoFactory(whichDemo);
+                PatternDemo patternDemo = demoFactory.getPatternDemo(whichDemo);
             }
 
 

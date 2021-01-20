@@ -1,8 +1,10 @@
 package creationalPatterns.factoryDemo;
 
+import logic.PatternDemo;
+
 import java.io.IOException;
 
-public class FactoryPatternDemo {
+public class FactoryPatternDemo implements PatternDemo {
 
     public FactoryPatternDemo() {
 
