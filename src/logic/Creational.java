@@ -11,6 +11,7 @@ public class Creational implements PatternType {
         int CPChoice;
         Scanner CPInput= new Scanner(System.in);
         CreationalFactory creationalFactory = new CreationalFactory();
+        Pattern pattern;
 
         do {
             useageMessage();
@@ -18,10 +19,13 @@ public class Creational implements PatternType {
             CPChoice = CPInput.nextInt();
 
             if (CPChoice == 1) {
-                Pattern factory = creationalFactory.getPattern("Factory");
+                pattern = creationalFactory.getPattern("Factory");
             }
             else if (CPChoice==2) {
-                new AbstractFactory(); //TO DO
+                pattern=creationalFactory.getPattern("AbstractFactory");
+            }
+            else if (CPChoice==3){
+                pattern=creationalFactory.getPattern("Singleton");
             }
             else if (CPChoice == 21) {
                 System.exit(0);
@@ -42,6 +46,7 @@ public class Creational implements PatternType {
         System.out.println("Chose which Creational Pattern would you like to see:");
         System.out.println("1. Factory");
         System.out.println("2. Abstract Factory");
+        System.out.println("3. Singleton");
         System.out.println("20. Ops! I didn't want Creational Patterns! Take me back!");
         System.out.println("21. End program.");
     }

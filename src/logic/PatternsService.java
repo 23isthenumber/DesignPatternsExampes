@@ -12,8 +12,8 @@ public class PatternsService {
                               String whichDemo){
         Scanner inputScanner = new Scanner(System.in);
         int input;
-        DemoFactory demoFactory = new DemoFactory();
 
+        AbstractFactory patternDemo;
 
         do {
             System.out.println("Would you rather see an:");
@@ -42,7 +42,9 @@ public class PatternsService {
                     e.printStackTrace();
                 }
             } else if (input == 3) {
-                PatternDemo patternDemo = demoFactory.getPatternDemo(whichDemo);
+                 patternDemo = FactoryProducer.getFactory(
+                         "DemoFactory");
+                 patternDemo.produce(whichDemo);
             }
 
 

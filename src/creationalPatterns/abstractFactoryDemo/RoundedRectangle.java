@@ -1,5 +1,5 @@
 package creationalPatterns.abstractFactoryDemo;
-
+//example from tutorialspoint.com
 public class RoundedRectangle implements Shape {
     @Override
     public void draw() {

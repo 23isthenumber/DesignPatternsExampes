@@ -13,13 +13,12 @@ public class AbstractFactory implements Pattern {
 
         abstractFactoryService = new PatternsService();
         abstractFactoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                        "tree/main/src/creationalPatterns/FactoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/FactoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg",
-                "Factory");
+                "https://github.com/23isthenumber/DesignPatternsExampes" +
+                        "/tree/main/src/creationalPatterns/abstractFactoryDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/creationalPatterns/" +
+                        "abstractFactoryDemo/abstractfactory_pattern_uml_diagram.jpg",
+                "AbstractFactory");
     }
 
     @Override

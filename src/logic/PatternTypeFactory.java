@@ -1,15 +1,15 @@
 package logic;
 
-public class PatternTypeFactory {
+public class PatternTypeFactory implements AbstractFactory{
 
-    public PatternType getPatternType(String patternType) {
 
-        if (patternType == "Creational") {
+
+    @Override
+    public PatternType produce(String whatToProduce) {
+        if (whatToProduce == "Creational") {
             return new Creational();
         }
         return null;
     }
-
-
 
 }

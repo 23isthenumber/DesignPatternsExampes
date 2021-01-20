@@ -24,11 +24,6 @@ public class FactoryPatternDemo implements PatternDemo {
 
         shape3.draw();
 
-        System.out.println("Press ENTER to continue");
-        try {
-            System.in.read();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+        holdProgram();
     }
 }

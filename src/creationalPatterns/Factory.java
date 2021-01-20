@@ -18,8 +18,7 @@ public class Factory implements Pattern {
                 "https://raw.githubusercontent.com/" +
                         "23isthenumber/DesignPatternsExampes/" +
                         "main/src/creationalPatterns/FactoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg",
-                "Factory");
+                        "factory_pattern_uml_diagram.jpg", "Factory");
     }
 
     @Override

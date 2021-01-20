@@ -1,6 +1,7 @@
 
-import logic.PatternType;
-import logic.PatternTypeFactory;
+import logic.AbstractFactory;
+import logic.FactoryProducer;
+
 
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class DesignPatternsExamples {
     public static void main (String [] args){
         int patternChoice;
         Scanner input = new Scanner(System.in);
-        PatternTypeFactory patternTypeFactory = new PatternTypeFactory();
+        AbstractFactory abstractFactory;
 
         do {
             System.out.println("There are three categories of design patterns.");
@@ -21,7 +22,9 @@ public class DesignPatternsExamples {
             patternChoice = input.nextInt();
 
             if (patternChoice == 1) {
-                PatternType creational = patternTypeFactory.getPatternType("Creational");
+                abstractFactory = FactoryProducer.getFactory(
+                        "PatternTypeFactory");
+                abstractFactory.produce("Creational");
             } else if (patternChoice == 2) {
 
             }
