@@ -13,11 +13,11 @@ public class Singleton implements Pattern {
         singletonService = new PatternsService();
         singletonService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                        "tree/main/src/creationalPatterns/FactoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/FactoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Singleton"); //TO DO LINKI
+                        "tree/main/src/creationalPatterns/singletonDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/creationalPatterns/singletonDemo/" +
+                        "singleton_pattern_uml_diagram.jpg",
+                "Singleton");
     }
 
     @Override

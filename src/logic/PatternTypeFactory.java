@@ -1,6 +1,16 @@
 package logic;
 
 public class PatternTypeFactory implements AbstractFactory{
+    private static PatternTypeFactory instance = new PatternTypeFactory();
+
+    private PatternTypeFactory (){
+
+    }
+
+    public static PatternTypeFactory getInstance(){
+        return instance;
+
+    }
 
 
 

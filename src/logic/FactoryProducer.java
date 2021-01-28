@@ -2,11 +2,13 @@ package logic;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory (String whichFactory){
+
+
         if (whichFactory=="PatternTypeFactory"){
-            return new PatternTypeFactory();
+            return PatternTypeFactory.getInstance();
         }
         else if (whichFactory=="DemoFactory"){
-            return new DemoFactory();
+            return DemoFactory.getInstance();
         }
         return null;
     }

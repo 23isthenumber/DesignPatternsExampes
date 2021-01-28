@@ -6,7 +6,16 @@ import creationalPatterns.factoryDemo.FactoryPatternDemo;
 import creationalPatterns.singletonDemo.SingletonDemo;
 
 public class DemoFactory implements AbstractFactory{
+    private static DemoFactory instance = new DemoFactory();
 
+    private DemoFactory (){
+
+    }
+
+    public static DemoFactory getInstance(){
+        return instance;
+
+    }
 
     @Override
     public PatternDemo produce(String whatToProduce) {

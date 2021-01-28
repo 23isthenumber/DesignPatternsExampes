@@ -4,6 +4,7 @@ import creationalPatterns.AbstractFactory;
 import creationalPatterns.Factory;
 import creationalPatterns.Singleton;
 
+
 public class CreationalFactory {
 
     public Pattern getPattern (String whichPattern){
