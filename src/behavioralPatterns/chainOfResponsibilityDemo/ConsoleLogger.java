@@ -1,5 +1,5 @@
 package behavioralPatterns.chainOfResponsibilityDemo;
-
+//example from tutorialspoint.com
 public class ConsoleLogger extends AbstractLogger {
 
     public ConsoleLogger(int level){

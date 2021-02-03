@@ -1,5 +1,5 @@
 package behavioralPatterns.chainOfResponsibilityDemo;
-
+//example from tutorialspoint.com
 public class ChainPatternDemo {
 
     private static AbstractLogger getChainOfLoggers(){
