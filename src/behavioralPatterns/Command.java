@@ -1,10 +1,13 @@
-package creationalPatterns;
-
+package behavioralPatterns;
 
 import logic.Pattern;
-import logic.PatternsService;
 
-public class Factory implements Pattern {
+public class Command implements Pattern {
+    @Override
+    public void useageMessage() {
+
+    }
+    /*
     PatternsService factoryService;
 
     public Factory() {
@@ -26,4 +29,5 @@ public class Factory implements Pattern {
         System.out.println("We use this pattern when when you can’t anticipate" +
                 "what type of objects you’ll need to create or how to create them.");
     }
+     */
 }

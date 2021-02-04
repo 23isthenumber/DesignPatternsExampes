@@ -1,6 +1,9 @@
 package behavioralPatterns.interpreterDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class InterpreterPatternDemo {
+public class InterpreterPatternDemo implements PatternDemo {
 
     //Rule: Robert and John are male
     public static Expression getMaleExpression(){
@@ -16,11 +19,13 @@ public class InterpreterPatternDemo {
         return new AndExpression(julie, married);
     }
 
-    public static void main(String[] args) {
+    public InterpreterPatternDemo() {
         Expression isMale = getMaleExpression();
         Expression isMarriedWoman = getMarriedWomanExpression();
 
         System.out.println("John is male? " + isMale.interpret("John"));
         System.out.println("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
+
+        holdProgram();
     }
 }

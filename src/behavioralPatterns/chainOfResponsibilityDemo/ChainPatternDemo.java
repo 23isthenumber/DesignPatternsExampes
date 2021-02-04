@@ -1,6 +1,9 @@
 package behavioralPatterns.chainOfResponsibilityDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class ChainPatternDemo {
+public class ChainPatternDemo implements PatternDemo {
 
     private static AbstractLogger getChainOfLoggers(){
 
@@ -14,7 +17,7 @@ public class ChainPatternDemo {
         return errorLogger;
     }
 
-    public static void main(String[] args) {
+    public ChainPatternDemo() {
         AbstractLogger loggerChain = getChainOfLoggers();
 
         loggerChain.logMessage(AbstractLogger.INFO,
@@ -25,5 +28,7 @@ public class ChainPatternDemo {
 
         loggerChain.logMessage(AbstractLogger.ERROR,
                 "This is an error information.");
+
+        holdProgram();
     }
 }

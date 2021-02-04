@@ -1,8 +1,11 @@
 package structuralPatterns.proxyDemo;
-//example from tutorialspoint.com
-public class ProxyPatternDemo {
 
-    public static void main(String[] args) {
+import logic.PatternDemo;
+
+//example from tutorialspoint.com
+public class ProxyPatternDemo implements PatternDemo {
+
+    public ProxyPatternDemo() {
         Image image = new ProxyImage("test_10mb.jpg");
 
         //image will be loaded from disk
@@ -11,5 +14,7 @@ public class ProxyPatternDemo {
 
         //image will not be loaded from disk
         image.display();
+
+        holdProgram();
     }
 }

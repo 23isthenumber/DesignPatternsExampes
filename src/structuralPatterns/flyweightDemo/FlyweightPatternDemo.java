@@ -1,8 +1,11 @@
 package structuralPatterns.flyweightDemo;
+
+import logic.PatternDemo;
+
 //tutorialspoint.com
-public class FlyweightPatternDemo {
+public class FlyweightPatternDemo implements PatternDemo {
     private static final String colors[] = { "Red", "Green", "Blue", "White", "Black" };
-    public static void main(String[] args) {
+    public FlyweightPatternDemo() {
 
         for(int i=0; i < 20; ++i) {
             Circle circle = (Circle)ShapeFactory.getCircle(getRandomColor());
@@ -11,6 +14,8 @@ public class FlyweightPatternDemo {
             circle.setRadius(100);
             circle.draw();
         }
+
+        holdProgram();
     }
     private static String getRandomColor() {
         return colors[(int)(Math.random()*colors.length)];

@@ -1,7 +1,10 @@
 package behavioralPatterns.observerDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class ObserverPatternDemo {
-    public static void main(String[] args) {
+public class ObserverPatternDemo implements PatternDemo {
+    public ObserverPatternDemo() {
         Subject subject = new Subject();
 
         new HexaObserver(subject);
@@ -12,5 +15,7 @@ public class ObserverPatternDemo {
         subject.setState(15);
         System.out.println("Second state change: 10");
         subject.setState(10);
+
+        holdProgram();
     }
 }

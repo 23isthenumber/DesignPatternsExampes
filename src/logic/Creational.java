@@ -27,10 +27,19 @@ public class Creational implements PatternType {
             else if (CPChoice==3){
                 pattern=creationalFactory.getPattern("Singleton");
             }
-            else if (CPChoice == 21) {
+            else if (CPChoice==4){
+                pattern=creationalFactory.getPattern("Builder");
+            }
+            else if (CPChoice==5){
+                pattern=creationalFactory.getPattern("Prototype");
+            }
+            else if (CPChoice==6){
+                pattern=creationalFactory.getPattern("Singleton");
+            }
+            else if (CPChoice == 8) {
                 System.exit(0);
             }
-        }while (CPChoice!=20);
+        }while (CPChoice!=7);
     }
 
 
@@ -47,7 +56,10 @@ public class Creational implements PatternType {
         System.out.println("1. Factory");
         System.out.println("2. Abstract Factory");
         System.out.println("3. Singleton");
-        System.out.println("20. Ops! I didn't want Creational Patterns! Take me back!");
-        System.out.println("21. End program.");
+        System.out.println("4. Builder");
+        System.out.println("5. Prototype");
+        System.out.println("6. Singleton");
+        System.out.println("7. Ops! I didn't want Creational Patterns! Take me back!");
+        System.out.println("8. End program.");
     }
 }

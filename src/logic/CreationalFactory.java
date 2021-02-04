@@ -1,8 +1,7 @@
 package logic;
 
+import creationalPatterns.*;
 import creationalPatterns.AbstractFactory;
-import creationalPatterns.Factory;
-import creationalPatterns.Singleton;
 
 
 public class CreationalFactory {
@@ -14,6 +13,15 @@ public class CreationalFactory {
         }
         else if (whichPattern=="AbstractFactory"){
             return new AbstractFactory();
+        }
+        else if (whichPattern=="Singleton"){
+            return new Singleton();
+        }
+        else if (whichPattern=="Builder"){
+            return new Builder();
+        }
+        else if (whichPattern=="Prototype"){
+            return new Prototype();
         }
         else if (whichPattern=="Singleton"){
             return new Singleton();

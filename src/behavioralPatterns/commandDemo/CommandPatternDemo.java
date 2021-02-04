@@ -1,7 +1,10 @@
 package behavioralPatterns.commandDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class CommandPatternDemo {
-    public static void main(String[] args) {
+public class CommandPatternDemo implements PatternDemo {
+    public CommandPatternDemo() {
         Stock abcStock = new Stock();
 
         BuyStock buyStockOrder = new BuyStock(abcStock);
@@ -12,5 +15,7 @@ public class CommandPatternDemo {
         broker.takeOrder(sellStockOrder);
 
         broker.placeOrders();
+
+        holdProgram();
     }
 }

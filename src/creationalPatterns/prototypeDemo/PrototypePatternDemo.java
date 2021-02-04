@@ -1,7 +1,10 @@
 package creationalPatterns.prototypeDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class PrototypePatternDemo {
-    public static void main(String[] args) {
+public class PrototypePatternDemo implements PatternDemo {
+    public PrototypePatternDemo() {
         ShapeCache.loadCache();
 
         Shape clonedShape = (Shape) ShapeCache.getShape("1");
@@ -12,5 +15,7 @@ public class PrototypePatternDemo {
 
         Shape clonedShape3 = (Shape) ShapeCache.getShape("3");
         System.out.println("Shape : " + clonedShape3.getType());
+
+        holdProgram();
     }
 }

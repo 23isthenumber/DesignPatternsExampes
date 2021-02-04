@@ -1,7 +1,10 @@
 package behavioralPatterns.mementoDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class MementoPatternDemo {
-    public static void main(String[] args) {
+public class MementoPatternDemo implements PatternDemo {
+    public MementoPatternDemo() {
 
         Originator originator = new Originator();
         CareTaker careTaker = new CareTaker();
@@ -20,5 +23,7 @@ public class MementoPatternDemo {
         System.out.println("First saved State: " + originator.getState());
         originator.getStateFromMemento(careTaker.get(1));
         System.out.println("Second saved State: " + originator.getState());
+
+        holdProgram();
     }
 }

@@ -1,7 +1,10 @@
 package structuralPatterns.compositeDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class CompositePatternDemo {
-    public static void main(String[] args) {
+public class CompositePatternDemo implements PatternDemo {
+    public CompositePatternDemo() {
 
         Employee CEO = new Employee("John","CEO", 30000);
 
@@ -34,5 +37,7 @@ public class CompositePatternDemo {
                 System.out.println(employee);
             }
         }
+
+        holdProgram();
     }
 }

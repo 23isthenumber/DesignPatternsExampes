@@ -1,10 +1,12 @@
 package structuralPatterns.filterDemo;
 //example from tutorialspoint.com
+import logic.PatternDemo;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class CriteriaPatternDemo {
-    public static void main(String[] args) {
+public class CriteriaPatternDemo implements PatternDemo {
+    public CriteriaPatternDemo() {
         List<Person> persons = new ArrayList<Person>();
 
         persons.add(new Person("Robert","Male", "Single"));
@@ -31,6 +33,8 @@ public class CriteriaPatternDemo {
 
         System.out.println("\nSingle Or Females: ");
         printPersons(singleOrFemale.meetCriteria(persons));
+
+        holdProgram();
     }
 
     public static void printPersons(List<Person> persons){

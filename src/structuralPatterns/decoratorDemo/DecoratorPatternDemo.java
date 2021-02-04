@@ -1,7 +1,10 @@
 package structuralPatterns.decoratorDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class DecoratorPatternDemo {
-    public static void main(String[] args) {
+public class DecoratorPatternDemo implements PatternDemo {
+    public DecoratorPatternDemo() {
 
         Shape circle = new Circle();
 
@@ -16,5 +19,7 @@ public class DecoratorPatternDemo {
 
         System.out.println("\nRectangle of red border");
         redRectangle.draw();
+
+        holdProgram();
     }
 }

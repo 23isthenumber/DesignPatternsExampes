@@ -1,11 +1,16 @@
 package structuralPatterns.facadeDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class FacadePatternDemo {
-    public static void main(String[] args) {
+public class FacadePatternDemo implements PatternDemo {
+    public FacadePatternDemo() {
         ShapeMaker shapeMaker = new ShapeMaker();
 
         shapeMaker.drawCircle();
         shapeMaker.drawRectangle();
         shapeMaker.drawSquare();
+
+        holdProgram();
     }
 }

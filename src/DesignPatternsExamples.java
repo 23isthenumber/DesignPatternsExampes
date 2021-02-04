@@ -26,7 +26,14 @@ public class DesignPatternsExamples {
                         "PatternTypeFactory");
                 abstractFactory.produce("Creational");
             } else if (patternChoice == 2) {
-
+                abstractFactory = FactoryProducer.getFactory(
+                        "PatternTypeFactory");
+                abstractFactory.produce("Structural");
+            }
+            else if (patternChoice == 3) {
+                abstractFactory = FactoryProducer.getFactory(
+                        "PatternTypeFactory");
+                abstractFactory.produce("Behavioral");
             }
         } while (patternChoice!=4);
 

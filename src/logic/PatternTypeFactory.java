@@ -19,6 +19,12 @@ public class PatternTypeFactory implements AbstractFactory{
         if (whatToProduce == "Creational") {
             return new Creational();
         }
+        else if (whatToProduce== "Structural"){
+            return new Structural();
+        }
+        else if (whatToProduce== "Behavioral"){
+            return new Behavioral();
+        }
         return null;
     }
 

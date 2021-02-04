@@ -1,7 +1,10 @@
 package behavioralPatterns.stateDemo;
+
+import logic.PatternDemo;
+
 //example from tutorialspoint.com
-public class StatePatternDemo {
-    public static void main(String[] args) {
+public class StatePatternDemo implements PatternDemo {
+    public StatePatternDemo() {
         Context context = new Context();
 
         StartState startState = new StartState();
@@ -13,5 +16,7 @@ public class StatePatternDemo {
         stopState.doAction(context);
 
         System.out.println(context.getState().toString());
+
+        holdProgram();
     }
 }
