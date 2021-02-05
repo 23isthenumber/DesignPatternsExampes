@@ -1,33 +1,29 @@
 package structuralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Proxy implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService proxyService;
 
-    public Factory() {
+    public Proxy() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
+        proxyService = new PatternsService();
+        proxyService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+                        "tree/main/src/structuralPatterns/proxyDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/structuralPatterns/" +
+                        "proxyDemo/proxy_pattern_uml_diagram.jpg", "Proxy");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("In proxy pattern, a class represents " +
+                "functionality of another class.");
     }
-     */
+
 }

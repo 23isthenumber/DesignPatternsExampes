@@ -1,33 +1,26 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Template implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService templateService;
 
-    public Factory() {
+    public Template() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        templateService = new PatternsService();
+        templateService.patternLogic(
+                "https://github.com/23isthenumber/DesignPatternsExampes/tree/main/src/behavioralPatterns/templateDemo",
+                "https://raw.githubusercontent.com/23isthenumber/DesignPatternsExampes/main/src/behavioralPatterns/templateDemo/template_pattern_uml_diagram.jpg"
+                , "Template");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("In Template pattern, an abstract class exposes defined way(s)/template(s) to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. ");
     }
-     */
+
 }

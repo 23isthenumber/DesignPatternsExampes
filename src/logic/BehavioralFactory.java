@@ -1,14 +1,12 @@
 package logic;
 
 import behavioralPatterns.*;
-import creationalPatterns.*;
-import creationalPatterns.AbstractFactory;
 
 public class BehavioralFactory {
     public Pattern getPattern (String whichPattern){
 
         if (whichPattern=="ChainOfResponsibility"){
-            return new ChainOfResposibility();
+            return new ChainOfResponsibility();
         }
         else if (whichPattern=="Command"){
             return new Command();

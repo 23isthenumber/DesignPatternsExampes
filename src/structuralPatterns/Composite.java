@@ -1,33 +1,32 @@
 package structuralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Composite implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService compositeService;
 
-    public Factory() {
+    public Composite() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
+        compositeService = new PatternsService();
+        compositeService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+                        "tree/main/src/structuralPatterns/compositeDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/structuralPatterns/" +
+                        "compositeDemo/composite_pattern_uml_diagram.jpg"
+                ,"Composite");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Composite pattern is used where we need to treat a " +
+                "group of objects in similar way as a single object. " +
+                "Composite pattern composes objects in term of a tree " +
+                "structure to represent part as well as whole hierarchy.");
     }
-     */
+
 }

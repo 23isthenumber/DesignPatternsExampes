@@ -1,33 +1,28 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Nullobject implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService nullobjectService;
 
-    public Factory() {
+    public Nullobject() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        nullobjectService = new PatternsService();
+        nullobjectService.patternLogic(
+                "https://github.com/23isthenumber/DesignPatternsExampes/tree/main/src/behavioralPatterns/nullobjectDemo",
+                "https://raw.githubusercontent.com/23isthenumber/DesignPatternsExampes/main/src/behavioralPatterns/nullobjectDemo/null_pattern_uml_diagram.jpg"
+                , "Nullobject");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("a null object replaces check of NULL object instance. " +
+                "Instead of putting if check for a null value, Null Object reflects a do nothing relationship. " +
+                "Such Null object can also be used to provide default behaviour in case data is not available.");
     }
-     */
+
 }

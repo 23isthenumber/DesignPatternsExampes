@@ -1,33 +1,30 @@
 package structuralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Facade implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService facadeService;
 
-    public Factory() {
+    public Facade() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
+        facadeService = new PatternsService();
+        facadeService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+                        "tree/main/src/structuralPatterns/facadeDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/structuralPatterns/" +
+                        "facadeDemo/facade_pattern_uml_diagram.jpg", "Facade");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Facade pattern hides the complexities of the system " +
+                "and provides an interface to the client using which the client " +
+                "can access the system.");
     }
-     */
+
 }

@@ -1,33 +1,31 @@
 package structuralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Filter implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService filterService;
 
-    public Factory() {
+    public Filter() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
+        filterService = new PatternsService();
+        filterService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+                        "tree/main/src/structuralPatterns/filterDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/structuralPatterns/" +
+                        "filterDemo/filter_pattern_uml_diagram.jpg", "Filter");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Filter pattern or Criteria pattern is a design " +
+                "pattern that enables developers to filter a set of objects " +
+                "using different criteria and chaining them in a decoupled way" +
+                " through logical operations.");
     }
-     */
+
 }

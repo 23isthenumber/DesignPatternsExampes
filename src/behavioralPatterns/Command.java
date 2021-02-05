@@ -1,33 +1,34 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Command implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService commandService;
 
-    public Factory() {
+    public Command() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        commandService = new PatternsService();
+        commandService.patternLogic(
+                "https://github.com/23isthenumber/" +
+                        "DesignPatternsExampes/tree/main/src/behavioralPatterns/" +
+                        "commandDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/behavioralPatterns/" +
+                        "commandDemo/command_pattern_uml_diagram.jpg"
+                , "Command");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("A request is wrapped under an object as command " +
+                "and passed to invoker object. " +
+                "Invoker object looks for the appropriate object which can " +
+                "handle this command and passes the command to the corresponding" +
+                " object which executes the command.");
     }
-     */
+
 }

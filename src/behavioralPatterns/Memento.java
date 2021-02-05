@@ -1,33 +1,32 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Memento implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService mementoService;
 
-    public Factory() {
+    public Memento() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        mementoService = new PatternsService();
+        mementoService.patternLogic(
+                "https://github.com/23isthenumber/DesignPatternsExampes/tree/main/src/behavioralPatterns/mementoDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/behavioralPatterns/mementoDemo/memento_pattern_uml_diagram.jpg"
+                , "Memento");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Memento pattern is used to restore state" +
+                " of an object to a previous state. " +
+                "Memento pattern uses three actor classes. " +
+                "Memento contains state of an object to be restored. " +
+                "Originator creates and stores states in Memento objects " +
+                "and Caretaker object is responsible to restore object state from Memento.");
     }
-     */
+
 }

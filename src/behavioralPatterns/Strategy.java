@@ -1,33 +1,26 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Strategy implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService strategyService;
 
-    public Factory() {
+    public Strategy() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        strategyService = new PatternsService();
+        strategyService.patternLogic(
+                "https://github.com/23isthenumber/DesignPatternsExampes/tree/main/src/behavioralPatterns/strategyDemo",
+                "https://raw.githubusercontent.com/23isthenumber/DesignPatternsExampes/main/src/behavioralPatterns/strategyDemo/strategy_pattern_uml_diagram.jpg"
+                , "Strategy");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("In Strategy pattern, a class behavior or its algorithm can be changed at run time. ");
     }
-     */
+
 }

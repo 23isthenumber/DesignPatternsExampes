@@ -1,33 +1,29 @@
 package behavioralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Mediator implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
+    PatternsService mediatorService;
 
-    public Factory() {
+    public Mediator() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
-                "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+        mediatorService = new PatternsService();
+        mediatorService.patternLogic(
+                "https://github.com/23isthenumber/DesignPatternsExampes/tree/main/src/behavioralPatterns/mediatorDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/behavioralPatterns/mediatorDemo/mediator_pattern_uml_diagram.jpg", "Mediator");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Mediator pattern is used to reduce communication" +
+                " complexity between multiple objects or classes. " +
+                "This pattern provides a mediator class which normally handles " +
+                "all the communications between different classes and supports easy maintenance of the code by loose coupling.");
     }
-     */
+
 }

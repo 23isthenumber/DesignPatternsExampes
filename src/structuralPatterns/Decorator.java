@@ -1,33 +1,32 @@
 package structuralPatterns;
 
 import logic.Pattern;
+import logic.PatternsService;
 
 public class Decorator implements Pattern {
-    @Override
-    public void useageMessage() {
 
-    }
-    /*
-    PatternsService factoryService;
 
-    public Factory() {
+    PatternsService decoratorService;
+
+    public Decorator() {
 
         useageMessage();
 
-        factoryService = new PatternsService();
-        factoryService.patternLogic(
+        decoratorService = new PatternsService();
+        decoratorService.patternLogic(
                 "https://github.com/23isthenumber/DesignPatternsExampes/" +
-                "tree/main/src/creationalPatterns/factoryDemo",
-                "https://raw.githubusercontent.com/" +
-                        "23isthenumber/DesignPatternsExampes/" +
-                        "main/src/creationalPatterns/factoryDemo/" +
-                        "factory_pattern_uml_diagram.jpg", "Factory");
+                        "tree/main/src/structuralPatterns/decoratorDemo",
+                "https://raw.githubusercontent.com/23isthenumber/" +
+                        "DesignPatternsExampes/main/src/structuralPatterns/" +
+                        "decoratorDemo/decorator_pattern_uml_diagram.jpg"
+                , "Decorator");
     }
 
     @Override
     public void useageMessage() {
-        System.out.println("We use this pattern when when you can’t anticipate" +
-                "what type of objects you’ll need to create or how to create them.");
+        System.out.println("Decorator pattern allows a user " +
+                "to add new functionality to an existing object without " +
+                "altering its structure.");
     }
-     */
+
 }
