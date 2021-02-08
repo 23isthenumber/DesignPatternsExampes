@@ -9,7 +9,7 @@ public class Factory implements Pattern {
 
     public Factory() {
 
-        useageMessage();
+        usageMessage();
 
         factoryService = new PatternsService();
         factoryService.patternLogic(
@@ -22,7 +22,7 @@ public class Factory implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("We use this pattern when when you can’t anticipate" +
                 "what type of objects you’ll need to create or how to create them.");
     }

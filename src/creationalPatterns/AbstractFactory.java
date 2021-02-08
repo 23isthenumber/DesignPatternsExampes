@@ -9,7 +9,7 @@ public class AbstractFactory implements Pattern {
 
     public AbstractFactory() {
 
-        useageMessage();
+        usageMessage();
 
         abstractFactoryService = new PatternsService();
         abstractFactoryService.patternLogic(
@@ -22,7 +22,7 @@ public class AbstractFactory implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println( "This is a factory of factories");
     }
 }

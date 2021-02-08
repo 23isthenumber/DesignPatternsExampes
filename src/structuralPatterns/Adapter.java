@@ -8,7 +8,7 @@ public class Adapter implements Pattern {
 
     public Adapter() {
 
-        useageMessage();
+        usageMessage();
 
         adapterService = new PatternsService();
         adapterService.patternLogic(
@@ -18,7 +18,7 @@ public class Adapter implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Adapter pattern works as a bridge between two incompatible interfaces.");
     }
 }

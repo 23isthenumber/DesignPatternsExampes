@@ -1,5 +1,5 @@
 package logic;
 
-public interface AbstractFactory<T> {
-    T produce (String whatToProduce);
+public interface AbstractFactory<PatternDemo> {
+    PatternDemo produce (String whatToProduce);
 }

@@ -9,7 +9,7 @@ public class Command implements Pattern {
 
     public Command() {
 
-        useageMessage();
+        usageMessage();
 
         commandService = new PatternsService();
         commandService.patternLogic(
@@ -23,7 +23,7 @@ public class Command implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("A request is wrapped under an object as command " +
                 "and passed to invoker object. " +
                 "Invoker object looks for the appropriate object which can " +

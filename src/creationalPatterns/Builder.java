@@ -9,7 +9,7 @@ public class Builder implements Pattern {
 
     public Builder() {
 
-        useageMessage();
+        usageMessage();
 
         builderService = new PatternsService();
         builderService.patternLogic(
@@ -23,7 +23,7 @@ public class Builder implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:" +
                 "Builder pattern builds a complex object using " +
                 "simple objects and using a step by step approach.");

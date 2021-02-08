@@ -9,7 +9,7 @@ public class Observer implements Pattern {
 
     public Observer() {
 
-        useageMessage();
+        usageMessage();
 
         observerService = new PatternsService();
         observerService.patternLogic(
@@ -19,7 +19,7 @@ public class Observer implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically.");
     }
 

@@ -9,7 +9,7 @@ public class Flyweight implements Pattern {
 
     public Flyweight() {
 
-        useageMessage();
+        usageMessage();
 
         flyweightService = new PatternsService();
         flyweightService.patternLogic(
@@ -22,7 +22,7 @@ public class Flyweight implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Flyweight pattern is primarily used to reduce " +
                 "the number of objects created and to decrease memory " +
                 "footprint and increase performance.");

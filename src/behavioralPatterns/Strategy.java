@@ -9,7 +9,7 @@ public class Strategy implements Pattern {
 
     public Strategy() {
 
-        useageMessage();
+        usageMessage();
 
         strategyService = new PatternsService();
         strategyService.patternLogic(
@@ -19,7 +19,7 @@ public class Strategy implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("In Strategy pattern, a class behavior or its algorithm can be changed at run time. ");
     }
 

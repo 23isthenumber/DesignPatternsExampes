@@ -1,7 +1,7 @@
 package logic;
 
 public class PatternTypeFactory implements AbstractFactory{
-    private static PatternTypeFactory instance = new PatternTypeFactory();
+    private static final PatternTypeFactory instance = new PatternTypeFactory();
 
     private PatternTypeFactory (){
 
@@ -16,16 +16,12 @@ public class PatternTypeFactory implements AbstractFactory{
 
     @Override
     public PatternType produce(String whatToProduce) {
-        if (whatToProduce == "Creational") {
-            return new Creational();
-        }
-        else if (whatToProduce== "Structural"){
-            return new Structural();
-        }
-        else if (whatToProduce== "Behavioral"){
-            return new Behavioral();
-        }
-        return null;
+        return switch (whatToProduce) {
+            case "Creational" -> new Creational();
+            case "Structural" -> new Structural();
+            case "Behavioral" -> new Behavioral();
+            default -> null;
+        };
     }
 
 }

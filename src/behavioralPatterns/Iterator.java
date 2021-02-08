@@ -9,7 +9,7 @@ public class Iterator implements Pattern {
 
     public Iterator() {
 
-        useageMessage();
+        usageMessage();
 
         iteratorService = new PatternsService();
         iteratorService.patternLogic(
@@ -19,7 +19,7 @@ public class Iterator implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("This pattern is used to get a way to access the elements of a collection object in " +
                 "sequential manner without any need to know its underlying representation. ");
     }

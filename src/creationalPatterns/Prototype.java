@@ -9,7 +9,7 @@ public class Prototype implements Pattern {
 
     public Prototype() {
 
-        useageMessage();
+        usageMessage();
 
         prototypeService = new PatternsService();
         prototypeService.patternLogic(
@@ -23,7 +23,7 @@ public class Prototype implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:" +
                 "This pattern involves implementing a prototype interface" +
                 " which tells to create a clone of the current object." +

@@ -9,7 +9,7 @@ public class Nullobject implements Pattern {
 
     public Nullobject() {
 
-        useageMessage();
+        usageMessage();
 
         nullobjectService = new PatternsService();
         nullobjectService.patternLogic(
@@ -19,7 +19,7 @@ public class Nullobject implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("a null object replaces check of NULL object instance. " +
                 "Instead of putting if check for a null value, Null Object reflects a do nothing relationship. " +
                 "Such Null object can also be used to provide default behaviour in case data is not available.");

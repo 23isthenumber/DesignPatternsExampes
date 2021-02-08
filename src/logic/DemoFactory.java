@@ -1,7 +1,7 @@
 package logic;
 
 
-import behavioralPatterns.Observer;
+
 import behavioralPatterns.chainOfResponsibilityDemo.ChainPatternDemo;
 import behavioralPatterns.commandDemo.CommandPatternDemo;
 import behavioralPatterns.interpreterDemo.InterpreterPatternDemo;
@@ -29,7 +29,7 @@ import structuralPatterns.flyweightDemo.FlyweightPatternDemo;
 import structuralPatterns.proxyDemo.ProxyPatternDemo;
 
 public class DemoFactory implements AbstractFactory{
-    private static DemoFactory instance = new DemoFactory();
+    private static final DemoFactory instance = new DemoFactory();
 
     private DemoFactory (){
 
@@ -42,82 +42,34 @@ public class DemoFactory implements AbstractFactory{
 
     @Override
     public PatternDemo produce(String whatToProduce) {
-        if (whatToProduce == "Factory") {
-            return new FactoryPatternDemo();
-        }
-        else if (whatToProduce=="AbstractFactory"){
-            return new AbstractFactoryDemo();
-        }
-        else if (whatToProduce=="Singleton"){
-            return new SingletonDemo();
-        }
-        else if (whatToProduce=="Builder"){
-            return new BuilderPatternDemo();
-        }
-        else if (whatToProduce=="Prototype"){
-            return new PrototypePatternDemo();
-        }
-        else if (whatToProduce=="Adapter"){
-            return new AdapterPatternDemo();
-        }
-        else if (whatToProduce=="Bridge"){
-            return new BridgePatternDemo();
-        }
-        else if (whatToProduce=="Composite"){
-            return new CompositePatternDemo();
-        }
-        else if (whatToProduce=="Decorator"){
-            return new DecoratorPatternDemo();
-        }
-        else if (whatToProduce=="Facade"){
-            return new FacadePatternDemo();
-        }
-        else if (whatToProduce=="Filter"){
-            return new CriteriaPatternDemo();
-        }
-        else if (whatToProduce=="Flyweight"){
-            return new FlyweightPatternDemo();
-        }
-        else if (whatToProduce=="Proxy"){
-            return new ProxyPatternDemo();
-        }
-        else if (whatToProduce=="ChainOfResponsibility"){
-            return new ChainPatternDemo();
-        }
-        else if (whatToProduce=="Command"){
-            return new CommandPatternDemo();
-        }
-        else if (whatToProduce=="Interpreter"){
-            return new InterpreterPatternDemo();
-        }
-        else if (whatToProduce=="Iterator"){
-            return new IteratorPatternDemo();
-        }
-        else if (whatToProduce=="Mediator"){
-            return new MediatorPatternDemo();
-        }
-        else if (whatToProduce=="Memento"){
-            return new MementoPatternDemo();
-        }
-        else if (whatToProduce=="Nullobject"){
-            return new NullPatternDemo();
-        }
-        else if (whatToProduce=="Template"){
-            return new TemplatePatternDemo();
-        }
-        else if (whatToProduce=="Observer"){
-            return new ObserverPatternDemo();
-        }
-        else if (whatToProduce=="State"){
-            return new StatePatternDemo();
-        }
-        else if (whatToProduce=="Strategy"){
-            return new StrategyPatternDemo();
-        }
-        else if (whatToProduce=="Visitor"){
-            return new VisitorPatternDemo();
-        }
+        return switch (whatToProduce) {
+            case "Factory" -> new FactoryPatternDemo();
+            case "AbstractFactory" -> new AbstractFactoryDemo();
+            case "Singleton" -> new SingletonDemo();
+            case "Builder" -> new BuilderPatternDemo();
+            case "Prototype" -> new PrototypePatternDemo();
+            case "Adapter" -> new AdapterPatternDemo();
+            case "Bridge" -> new BridgePatternDemo();
+            case "Composite" -> new CompositePatternDemo();
+            case "Decorator" -> new DecoratorPatternDemo();
+            case "Facade" -> new FacadePatternDemo();
+            case "Filter" -> new CriteriaPatternDemo();
+            case "Flyweight" -> new FlyweightPatternDemo();
+            case "Proxy" -> new ProxyPatternDemo();
+            case "ChainOfResponsibility" -> new ChainPatternDemo();
+            case "Command" -> new CommandPatternDemo();
+            case "Interpreter" -> new InterpreterPatternDemo();
+            case "Iterator" -> new IteratorPatternDemo();
+            case "Mediator" -> new MediatorPatternDemo();
+            case "Memento" -> new MementoPatternDemo();
+            case "Nullobject" -> new NullPatternDemo();
+            case "Template" -> new TemplatePatternDemo();
+            case "Observer" -> new ObserverPatternDemo();
+            case "State" -> new StatePatternDemo();
+            case "Strategy" -> new StrategyPatternDemo();
+            case "Visitor" -> new VisitorPatternDemo();
+            default -> null;
+        };
 
-        return null;
     }
 }

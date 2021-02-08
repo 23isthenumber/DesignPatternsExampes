@@ -3,8 +3,6 @@ package structuralPatterns;
 import logic.Pattern;
 import logic.PatternsService;
 
-import java.sql.SQLOutput;
-
 public class Bridge implements Pattern {
 
 
@@ -13,7 +11,7 @@ public class Bridge implements Pattern {
 
     public Bridge() {
 
-        useageMessage();
+        usageMessage();
 
         bridgeService = new PatternsService();
         bridgeService.patternLogic(
@@ -25,7 +23,7 @@ public class Bridge implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("This pattern involves an interface which acts as a bridge " +
                 "which makes the functionality of concrete classes independent from " +
                 "interface implementer classes. ");

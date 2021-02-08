@@ -1,68 +1,63 @@
 package logic;
 
-import java.util.Scanner;
-
-public class Behavioral implements PatternType {
+public class Behavioral extends PatternType {
 
     public Behavioral (){
-        int BPChoice;
-        Scanner BPInput= new Scanner(System.in);
+
         BehavioralFactory behavioralFactory = new BehavioralFactory();
-        Pattern pattern;
 
         do {
-            useageMessage();
+            usageMessage();
 
-            BPChoice = BPInput.nextInt();
+            patternChoice = patternInput.nextInt();
 
-            if (BPChoice == 1) {
-                pattern = behavioralFactory.getPattern("Chain of " +
-                        "Responsibility");
+            if (patternChoice == 1) {
+                behavioralFactory.getPattern("ChainOfResponsibility");
             }
-            else if (BPChoice==2) {
-                pattern=behavioralFactory.getPattern("Command");
+            else if (patternChoice==2) {
+                behavioralFactory.getPattern("Command");
             }
-            else if (BPChoice==3){
-                pattern=behavioralFactory.getPattern("Intepreter");
+            else if (patternChoice==3){
+                behavioralFactory.getPattern("Intepreter");
             }
-            else if (BPChoice==4){
-                pattern=behavioralFactory.getPattern("Iterator");
+            else if (patternChoice==4){
+                behavioralFactory.getPattern("Iterator");
             }
-            else if (BPChoice==5){
-                pattern=behavioralFactory.getPattern("Mediator");
+            else if (patternChoice==5){
+                behavioralFactory.getPattern("Mediator");
             }
-            else if (BPChoice==6){
-                pattern=behavioralFactory.getPattern("Memento");
+            else if (patternChoice==6){
+                behavioralFactory.getPattern("Memento");
             }
-            else if (BPChoice==7){
-                pattern=behavioralFactory.getPattern("Null object");
+            else if (patternChoice==7){
+                behavioralFactory.getPattern("Nullobject");
             }
-            else if (BPChoice==8){
-                pattern=behavioralFactory.getPattern("Observer");
+            else if (patternChoice==8){
+                behavioralFactory.getPattern("Observer");
             }
-            else if (BPChoice==9){
-                pattern=behavioralFactory.getPattern("State");
+            else if (patternChoice==9){
+                behavioralFactory.getPattern("State");
             }
-            else if (BPChoice==10){
-                pattern=behavioralFactory.getPattern("Strategy");
+            else if (patternChoice==10){
+                behavioralFactory.getPattern("Strategy");
             }
-            else if (BPChoice==11){
-                pattern=behavioralFactory.getPattern("Template");
+            else if (patternChoice==11){
+                behavioralFactory.getPattern("Template");
             }
-            else if (BPChoice==12){
-                pattern=behavioralFactory.getPattern("Visitor");
+            else if (patternChoice==12){
+                behavioralFactory.getPattern("Visitor");
             }
-            else if (BPChoice == 14) {
+            else if (patternChoice == 14) {
                 System.exit(0);
             }
-        }while (BPChoice!=13);
+        }while (patternChoice!=13);
     }
 
 
 
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:");
         System.out.println("TThese design patterns are specifically" +
                 " concerned with communication between objects.");

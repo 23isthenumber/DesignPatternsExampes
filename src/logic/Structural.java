@@ -1,55 +1,53 @@
 package logic;
 
-import java.util.Scanner;
-
-public class Structural implements PatternType {
+public class Structural extends PatternType {
 
     public Structural (){
-        int SPChoice;
-        Scanner SPInput= new Scanner(System.in);
+        
+
         StructuralFactory structuralFactory = new StructuralFactory();
-        Pattern pattern;
+
 
         do {
-            useageMessage();
+            usageMessage();
 
-            SPChoice = SPInput.nextInt();
+            patternChoice = patternInput.nextInt();
 
-            if (SPChoice == 1) {
-                pattern = structuralFactory.getPattern("Adapter");
+            if (patternChoice == 1) {
+                structuralFactory.getPattern("Adapter");
             }
-            else if (SPChoice==2) {
-                pattern= structuralFactory.getPattern("Bridge");
+            else if (patternChoice==2) {
+                structuralFactory.getPattern("Bridge");
             }
-            else if (SPChoice==3){
-                pattern=structuralFactory.getPattern("Composite");
+            else if (patternChoice==3){
+                structuralFactory.getPattern("Composite");
             }
-            else if (SPChoice==4){
-                pattern=structuralFactory.getPattern("Decorator");
+            else if (patternChoice==4){
+                structuralFactory.getPattern("Decorator");
             }
-            else if (SPChoice==5){
-                pattern=structuralFactory.getPattern("Facade");
+            else if (patternChoice==5){
+                structuralFactory.getPattern("Facade");
             }
-            else if (SPChoice==6){
-                pattern=structuralFactory.getPattern("Filter");
+            else if (patternChoice==6){
+                structuralFactory.getPattern("Filter");
             }
-            else if (SPChoice==7){
-                pattern=structuralFactory.getPattern("Flyweight");
+            else if (patternChoice==7){
+                structuralFactory.getPattern("Flyweight");
             }
-            else if (SPChoice==8){
-                pattern=structuralFactory.getPattern("Proxy");
+            else if (patternChoice==8){
+                structuralFactory.getPattern("Proxy");
             }
-            else if (SPChoice == 10) {
+            else if (patternChoice == 10) {
                 System.exit(0);
             }
-        }while (SPChoice!=9);
+        }while (patternChoice!=9);
     }
 
 
 
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:");
         System.out.println("TThese design patterns concern class " +
                 "and object composition.");

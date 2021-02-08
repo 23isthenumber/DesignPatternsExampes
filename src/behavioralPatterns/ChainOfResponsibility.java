@@ -10,7 +10,7 @@ public class ChainOfResponsibility implements Pattern {
 
     public ChainOfResponsibility() {
 
-        useageMessage();
+        usageMessage();
 
         chorService = new PatternsService();
         chorService.patternLogic(
@@ -23,7 +23,7 @@ public class ChainOfResponsibility implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Creates a chain of receiver objects for a request.");
     }
 

@@ -9,7 +9,7 @@ public class Template implements Pattern {
 
     public Template() {
 
-        useageMessage();
+        usageMessage();
 
         templateService = new PatternsService();
         templateService.patternLogic(
@@ -19,7 +19,7 @@ public class Template implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("In Template pattern, an abstract class exposes defined way(s)/template(s) to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. ");
     }
 

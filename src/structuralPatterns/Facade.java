@@ -9,7 +9,7 @@ public class Facade implements Pattern {
 
     public Facade() {
 
-        useageMessage();
+        usageMessage();
 
         facadeService = new PatternsService();
         facadeService.patternLogic(
@@ -21,7 +21,7 @@ public class Facade implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Facade pattern hides the complexities of the system " +
                 "and provides an interface to the client using which the client " +
                 "can access the system.");

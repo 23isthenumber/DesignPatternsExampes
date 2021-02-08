@@ -9,7 +9,7 @@ public class Visitor implements Pattern {
 
     public Visitor() {
 
-        useageMessage();
+        usageMessage();
 
         visitorService = new PatternsService();
         visitorService.patternLogic(
@@ -19,7 +19,7 @@ public class Visitor implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("In Visitor pattern, we use a visitor class which changes the executing algorithm of an element class. By this way, execution algorithm of element can vary as and when visitor varies. ");
     }
 

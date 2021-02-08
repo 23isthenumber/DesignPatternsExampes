@@ -4,7 +4,7 @@ import logic.Pattern;
 
 public class ChainOfResposibility implements Pattern {
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
 
     }
     /*

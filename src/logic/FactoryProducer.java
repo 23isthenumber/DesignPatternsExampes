@@ -4,10 +4,10 @@ public class FactoryProducer {
     public static AbstractFactory getFactory (String whichFactory){
 
 
-        if (whichFactory=="PatternTypeFactory"){
+        if (whichFactory.equals("PatternTypeFactory")){
             return PatternTypeFactory.getInstance();
         }
-        else if (whichFactory=="DemoFactory"){
+        else if (whichFactory.equals("DemoFactory")){
             return DemoFactory.getInstance();
         }
         return null;

@@ -9,7 +9,7 @@ public class Proxy implements Pattern {
 
     public Proxy() {
 
-        useageMessage();
+        usageMessage();
 
         proxyService = new PatternsService();
         proxyService.patternLogic(
@@ -21,7 +21,7 @@ public class Proxy implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("In proxy pattern, a class represents " +
                 "functionality of another class.");
     }

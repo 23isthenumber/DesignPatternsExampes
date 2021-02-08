@@ -10,7 +10,7 @@ public class Decorator implements Pattern {
 
     public Decorator() {
 
-        useageMessage();
+        usageMessage();
 
         decoratorService = new PatternsService();
         decoratorService.patternLogic(
@@ -23,7 +23,7 @@ public class Decorator implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Decorator pattern allows a user " +
                 "to add new functionality to an existing object without " +
                 "altering its structure.");

@@ -9,7 +9,7 @@ public class Mediator implements Pattern {
 
     public Mediator() {
 
-        useageMessage();
+        usageMessage();
 
         mediatorService = new PatternsService();
         mediatorService.patternLogic(
@@ -19,7 +19,7 @@ public class Mediator implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Mediator pattern is used to reduce communication" +
                 " complexity between multiple objects or classes. " +
                 "This pattern provides a mediator class which normally handles " +

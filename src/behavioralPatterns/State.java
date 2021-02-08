@@ -9,7 +9,7 @@ public class State implements Pattern {
 
     public State() {
 
-        useageMessage();
+        usageMessage();
 
         stateService = new PatternsService();
         stateService.patternLogic(
@@ -19,7 +19,7 @@ public class State implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("In State pattern a class behavior changes based on its state.");
     }
 

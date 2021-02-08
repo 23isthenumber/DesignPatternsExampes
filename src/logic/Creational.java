@@ -1,52 +1,47 @@
 package logic;
 
-import creationalPatterns.AbstractFactory;
 
-import java.util.Scanner;
-
-
-public class Creational implements PatternType {
+public class Creational extends PatternType {
 
     public Creational (){
-        int CPChoice;
-        Scanner CPInput= new Scanner(System.in);
+        
+
         CreationalFactory creationalFactory = new CreationalFactory();
-        Pattern pattern;
 
         do {
-            useageMessage();
+            usageMessage();
 
-            CPChoice = CPInput.nextInt();
+            patternChoice = patternInput.nextInt();
 
-            if (CPChoice == 1) {
-                pattern = creationalFactory.getPattern("Factory");
+            if (patternChoice == 1) {
+                creationalFactory.getPattern("Factory");
             }
-            else if (CPChoice==2) {
-                pattern=creationalFactory.getPattern("AbstractFactory");
+            else if (patternChoice==2) {
+                creationalFactory.getPattern("AbstractFactory");
             }
-            else if (CPChoice==3){
-                pattern=creationalFactory.getPattern("Singleton");
+            else if (patternChoice==3){
+                creationalFactory.getPattern("Singleton");
             }
-            else if (CPChoice==4){
-                pattern=creationalFactory.getPattern("Builder");
+            else if (patternChoice==4){
+                creationalFactory.getPattern("Builder");
             }
-            else if (CPChoice==5){
-                pattern=creationalFactory.getPattern("Prototype");
+            else if (patternChoice==5){
+                creationalFactory.getPattern("Prototype");
             }
-            else if (CPChoice==6){
-                pattern=creationalFactory.getPattern("Singleton");
+            else if (patternChoice==6){
+                creationalFactory.getPattern("Singleton");
             }
-            else if (CPChoice == 8) {
+            else if (patternChoice == 8) {
                 System.exit(0);
             }
-        }while (CPChoice!=7);
+        }while (patternChoice!=7);
     }
 
 
 
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:");
         System.out.println("These design patterns provide a way to create objects " +
                 "while hiding the creation logic, rather than instantiating objects directly ");

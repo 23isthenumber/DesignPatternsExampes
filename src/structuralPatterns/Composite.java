@@ -9,7 +9,7 @@ public class Composite implements Pattern {
 
     public Composite() {
 
-        useageMessage();
+        usageMessage();
 
         compositeService = new PatternsService();
         compositeService.patternLogic(
@@ -22,7 +22,7 @@ public class Composite implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Composite pattern is used where we need to treat a " +
                 "group of objects in similar way as a single object. " +
                 "Composite pattern composes objects in term of a tree " +

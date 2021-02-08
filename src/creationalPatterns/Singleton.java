@@ -8,7 +8,7 @@ public class Singleton implements Pattern {
 
     public Singleton (){
 
-        useageMessage();
+        usageMessage();
 
         singletonService = new PatternsService();
         singletonService.patternLogic(
@@ -21,7 +21,7 @@ public class Singleton implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("According to tutorialspoint.com:");
         System.out.println("a single class which is responsible to create an " +
                 "object while making sure that only single object gets created. " +

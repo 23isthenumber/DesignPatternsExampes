@@ -9,7 +9,7 @@ public class Memento implements Pattern {
 
     public Memento() {
 
-        useageMessage();
+        usageMessage();
 
         mementoService = new PatternsService();
         mementoService.patternLogic(
@@ -20,7 +20,7 @@ public class Memento implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Memento pattern is used to restore state" +
                 " of an object to a previous state. " +
                 "Memento pattern uses three actor classes. " +

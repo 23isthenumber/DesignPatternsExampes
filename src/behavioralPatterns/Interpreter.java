@@ -9,7 +9,7 @@ public class Interpreter implements Pattern {
 
     public Interpreter() {
 
-        useageMessage();
+        usageMessage();
 
         factoryService = new PatternsService();
         factoryService.patternLogic(
@@ -23,7 +23,7 @@ public class Interpreter implements Pattern {
     }
 
     @Override
-    public void useageMessage() {
+    public void usageMessage() {
         System.out.println("Interpreter pattern provides a way to " +
                 "evaluate language grammar or expression." +
                 "This pattern is used in SQL parsing, symbol processing engine etc.");

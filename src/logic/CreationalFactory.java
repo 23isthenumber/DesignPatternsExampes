@@ -8,25 +8,14 @@ public class CreationalFactory {
 
     public Pattern getPattern (String whichPattern){
 
-        if (whichPattern=="Factory"){
-            return new Factory();
-        }
-        else if (whichPattern=="AbstractFactory"){
-            return new AbstractFactory();
-        }
-        else if (whichPattern=="Singleton"){
-            return new Singleton();
-        }
-        else if (whichPattern=="Builder"){
-            return new Builder();
-        }
-        else if (whichPattern=="Prototype"){
-            return new Prototype();
-        }
-        else if (whichPattern=="Singleton"){
-            return new Singleton();
-        }
-        return null;
+        return switch (whichPattern) {
+            case "Factory" -> new Factory();
+            case "AbstractFactory" -> new AbstractFactory();
+            case "Singleton" -> new Singleton();
+            case "Builder" -> new Builder();
+            case "Prototype" -> new Prototype();
+            default -> null;
+        };
 
     }
 
