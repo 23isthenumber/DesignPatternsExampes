@@ -1,7 +1,7 @@
 
-DesignPatternsExampes
+DesignPatternsExamples
 
-self teaching Design Pattersn by creating this project. Examples are taken from Tutorialspoint.com
+self teaching Design Patterns by creating this project. Examples are taken from Tutorialspoint.com
 
 Stages:
 
